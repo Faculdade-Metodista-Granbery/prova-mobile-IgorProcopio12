@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, task } from 'react-native';
 import { Card, Paragraph } from 'react-native-paper';
 
 
@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
         height: 220,
     },
 });
+
 
 const CardQuote = () => {
 
