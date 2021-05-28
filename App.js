@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, FlatList, StatusBar } from 'react-native';
+
 import CardQuote from './components/card/card.component';
 
 const notList = [
@@ -16,7 +17,7 @@ export default function App() {
         animated={true}
         backgroundColor="#c64242"
        />
-          <CardQuote />
+          {notList.map(item => <CardQuote task={item.task} background={item.background} />)}
 
 
     </SafeAreaView>
