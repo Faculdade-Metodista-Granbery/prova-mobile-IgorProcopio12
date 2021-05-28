@@ -1,14 +1,14 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {Button, Card, Paragraph } from 'react-native-paper';
+import {Button, Card, Paragraph, ProgressBar, Colors } from 'react-native-paper';
 
 
 const styles = StyleSheet.create({
     card: {
         backgroundColor: '#EBF5F7',
-        margin: 10,
+        margin: 12,
         borderRadius: 20,
-        flex: 1,
+        flex: 4,
         width: '50vh',
         overflow: 'hidden',
     },
@@ -30,13 +30,16 @@ const CardQuote = ({task, background}) => {
                 source={background} />
             <Card.Content style={styles.content}>
             </Card.Content>
-            <Card.Actions style={styles.actions}>  
-                <Paragraph>{task}</Paragraph>
-                <Button
+            <Card.Actions style={styles.actions}> 
+            <Button
                     icon="play"
-                    color="black"
-                    labelStyle={{fontSize: 24}}
-                />
+                    color="white"
+                    labelStyle={{fontSize: 48}}
+                    mode="contained"
+                    onPress={() => console.log('Pressed')}>
+            </Button>     
+                <Paragraph> {task} </Paragraph>
+                
             </Card.Actions>
         </Card>
     )

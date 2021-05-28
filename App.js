@@ -1,7 +1,10 @@
-import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, FlatList, StatusBar } from 'react-native';
 
+import React  from 'react';
+
+import { StyleSheet, Text, View, SafeAreaView, FlatList, StatusBar, } from 'react-native';
 import CardQuote from './components/card/card.component';
+import ThemeContext from './context/ThemeContext';
+
 
 const notList = [
   { id: 1, task: 'Suco de gratidão + clorofila', background: 'https://image.freepik.com/free-vector/flat-night-sky-background_23-2148032671.jpg'},
@@ -10,7 +13,9 @@ const notList = [
 ]
 
 export default function App() {
-  return (
+
+  
+    return(
 
     <SafeAreaView style={styles.container}>
       <StatusBar
@@ -24,8 +29,11 @@ export default function App() {
           <CardQuote task={item.task} background={item.background} />
         }
         >
-        </FlatList>
+        </FlatList> 
+        
     </SafeAreaView>
+
+    
   );
 }
 
