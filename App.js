@@ -17,9 +17,14 @@ export default function App() {
         animated={true}
         backgroundColor="#c64242"
        />
-          {notList.map(item => <CardQuote task={item.task} background={item.background} />)}
-
-
+        <FlatList 
+          data={notList}
+          keyExtractor={item => item.id}
+          renderItem={({ item }) =>
+          <CardQuote task={item.task} background={item.background} />
+        }
+        >
+        </FlatList>
     </SafeAreaView>
   );
 }

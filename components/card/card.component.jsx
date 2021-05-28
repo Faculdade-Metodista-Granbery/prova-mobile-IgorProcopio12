@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, task } from 'react-native';
-import { Card, Paragraph } from 'react-native-paper';
+import {StyleSheet} from 'react-native';
+import {Button, Card, Paragraph } from 'react-native-paper';
 
 
 const styles = StyleSheet.create({
@@ -20,10 +20,6 @@ const styles = StyleSheet.create({
     },
 });
 
-const tasks = StyleSheet.create({
-
-})
-
 const CardQuote = ({task, background}) => {
 
     return (
@@ -34,8 +30,13 @@ const CardQuote = ({task, background}) => {
                 source={background} />
             <Card.Content style={styles.content}>
             </Card.Content>
-            <Card.Actions>
+            <Card.Actions style={styles.actions}>  
                 <Paragraph>{task}</Paragraph>
+                <Button
+                    icon="play"
+                    color="black"
+                    labelStyle={{fontSize: 24}}
+                />
             </Card.Actions>
         </Card>
     )
