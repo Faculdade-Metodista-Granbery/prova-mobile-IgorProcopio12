@@ -41,8 +41,6 @@ const styles = StyleSheet.create({
     }
 });
 
-
-
 const CardQuote = ({ task, background, theme, theme2 }) => {
 
     const [getPlay, setPlay] = useState('play');
