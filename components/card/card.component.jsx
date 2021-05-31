@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#A72B1C',
     },
     cover: {
-        height: 300,
+        height: 240,
     },
     button: {
         alignItems: "center",
