@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Button, Card, Paragraph, ProgressBar, Colors } from 'react-native-paper';
+import { Button, Card, Paragraph, } from 'react-native-paper';
 
 
 const styles = StyleSheet.create({
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#A72B1C',
     },
     cover: {
-        height: 220,
+        height: 300,
     },
     button: {
         alignItems: "center",
